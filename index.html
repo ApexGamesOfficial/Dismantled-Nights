@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <meta
     name="description"
     content="Dismantled Nights — a home for Five Nights at Freddy's fan games."
@@ -19,7 +18,11 @@
 
   <header class="site-header">
     <div class="header-left">
-      <button class="brand" data-page="home" aria-label="Dismantled Nights Home">
+      <button
+        class="brand"
+        data-page="home"
+        aria-label="Dismantled Nights Home"
+      >
         <span class="brand-symbol">DN</span>
 
         <span class="brand-text">
@@ -29,11 +32,25 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <button class="nav-link active" data-page="home">Home</button>
-        <button class="nav-link" data-page="store">Store</button>
-        <button class="nav-link" data-page="library">Library</button>
-        <button class="nav-link" data-page="about">About</button>
-        <button class="nav-link" data-page="settings">Settings</button>
+        <button class="nav-link active" data-page="home">
+          Home
+        </button>
+
+        <button class="nav-link" data-page="store">
+          Store
+        </button>
+
+        <button class="nav-link" data-page="library">
+          Library
+        </button>
+
+        <button class="nav-link" data-page="about">
+          About
+        </button>
+
+        <button class="nav-link" data-page="settings">
+          Settings
+        </button>
       </nav>
     </div>
 
@@ -59,165 +76,310 @@
     <!-- HOME -->
     <section class="page active" id="homePage">
 
-      <section class="hero">
-        <div class="hero-background"></div>
+      <!-- FEATURED GAME HERO -->
+      <section class="featured-hero" id="featuredHero">
 
-        <div class="hero-content">
-          <p class="eyebrow">DISMANTLED NIGHTS</p>
+        <div class="featured-hero-background"></div>
+        <div class="featured-hero-grid"></div>
 
-          <h1>
-            The home of
-            <span>FNAF fan games.</span>
-          </h1>
+        <div class="featured-hero-content">
 
-          <p class="hero-description">
-            Discover fan-made experiences, build your library, follow new
-            projects, and manage your games through the Dismantled Nights
-            Launcher.
+          <div class="featured-kicker-row">
+            <span class="featured-kicker">
+              FEATURED GAME
+            </span>
+
+            <span class="featured-status">
+              IN DEVELOPMENT
+            </span>
+          </div>
+
+          <p class="featured-series">
+            THOSE NIGHTS AT FREDBEAR'S
           </p>
 
+          <h1>REOPENED</h1>
+
+          <p class="featured-copy">
+            Fredbear's closed its doors.
+            Now, they're opening again.
+          </p>
+
+          <div class="featured-tags">
+            <span>FNAF FAN GAME</span>
+            <span>HORROR</span>
+            <span>FREE</span>
+          </div>
+
           <div class="hero-actions">
-            <button class="primary-button" data-page="store">
-              Explore Store
+
+            <button
+              class="primary-button game-details-button"
+            >
+              View Game
             </button>
 
-            <button class="secondary-button" data-page="library">
-              Your Library
+            <button
+              class="secondary-button add-library-button"
+            >
+              + Add to Library
             </button>
+
+          </div>
+
+        </div>
+
+        <div
+          class="featured-hero-art"
+          aria-hidden="true"
+        >
+          <div
+            class="hero-art-frame hero-art-frame-one"
+          ></div>
+
+          <div
+            class="hero-art-frame hero-art-frame-two"
+          ></div>
+
+          <div class="hero-art-mark">
+            DN
+          </div>
+
+          <div class="hero-art-title">
+            <small>
+              THOSE NIGHTS AT FREDBEAR'S
+            </small>
+
+            <strong>
+              REOPENED
+            </strong>
           </div>
         </div>
 
-        <div class="hero-decoration">
-          <span>01</span>
-          <div></div>
-          <small>DISMANTLED NETWORK</small>
-        </div>
-      </section>
+        <div
+          class="featured-carousel-controls"
+          aria-label="Featured games carousel"
+        >
+          <button
+            class="carousel-arrow"
+            id="featuredPrev"
+            aria-label="Previous featured game"
+          >
+            ‹
+          </button>
 
-      <section class="content-section">
-        <div class="section-heading">
-          <div>
-            <p class="section-label">FEATURED PROJECT</p>
-            <h2>Now in development</h2>
-          </div>
+          <span class="carousel-count">
+            <strong>01</strong> / 01
+          </span>
 
-          <button class="text-button" data-page="store">
-            View Store →
+          <button
+            class="carousel-arrow"
+            id="featuredNext"
+            aria-label="Next featured game"
+          >
+            ›
           </button>
         </div>
 
-        <article class="featured-game">
-          <div class="featured-game-art">
-            <div class="game-status">IN DEVELOPMENT</div>
-
-            <div class="featured-art-text">
-              <small>DISMANTLED NIGHTS PRESENTS</small>
-
-              <h3>
-                THOSE NIGHTS
-                <span>AT FREDBEAR'S</span>
-              </h3>
-
-              <strong>REOPENED</strong>
-            </div>
-          </div>
-
-          <div class="featured-game-info">
-            <div>
-              <p class="game-type">FNAF FAN GAME</p>
-
-              <h3>Those Nights at Fredbear's: Reopened</h3>
-
-              <p>
-                Fredbear's closed its doors.
-                Now, they're opening again.
-              </p>
-            </div>
-
-            <div class="game-meta">
-              <div>
-                <span>Status</span>
-                <strong>In Development</strong>
-              </div>
-
-              <div>
-                <span>Developer</span>
-                <strong>Dismantled Nights</strong>
-              </div>
-
-              <div>
-                <span>Price</span>
-                <strong>Free</strong>
-              </div>
-            </div>
-
-            <div class="game-actions">
-              <button class="primary-button add-library-button">
-                Add to Library
-              </button>
-
-              <button class="secondary-button game-details-button">
-                View Details
-              </button>
-            </div>
-          </div>
-        </article>
       </section>
 
-      <section class="content-section">
-        <div class="section-heading">
+      <!-- FEATURED & RECOMMENDED -->
+      <section class="storefront-section">
+
+        <div class="storefront-heading">
+
           <div>
-            <p class="section-label">THE PLATFORM</p>
-            <h2>More than a download page.</h2>
+            <p class="section-label">
+              DISCOVER
+            </p>
+
+            <h2>
+              Featured &amp; Recommended
+            </h2>
           </div>
+
+          <div class="rail-controls">
+
+            <button
+              class="rail-arrow"
+              id="recommendedPrev"
+              aria-label="Scroll games left"
+            >
+              ‹
+            </button>
+
+            <button
+              class="rail-arrow"
+              id="recommendedNext"
+              aria-label="Scroll games right"
+            >
+              ›
+            </button>
+
+          </div>
+
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-number">01</span>
-            <h3>Discover</h3>
-            <p>
-              Browse Dismantled Nights releases and, eventually, approved
-              community fan games.
-            </p>
+        <div
+          class="game-rail"
+          id="recommendedRail"
+        >
+
+          <!-- REOPENED -->
+          <article
+            class="storefront-game-card featured-store-card"
+          >
+
+            <button
+              class="storefront-card-art game-details-button"
+              aria-label="View Those Nights at Fredbear's: Reopened"
+            >
+              <span class="storefront-badge">
+                IN DEVELOPMENT
+              </span>
+
+              <span class="storefront-art-copy">
+
+                <small>
+                  THOSE NIGHTS AT FREDBEAR'S
+                </small>
+
+                <strong>
+                  REOPENED
+                </strong>
+
+              </span>
+            </button>
+
+            <div class="storefront-card-info">
+
+              <div>
+                <p class="game-type">
+                  FNAF FAN GAME
+                </p>
+
+                <h3>
+                  Those Nights at Fredbear's:
+                  Reopened
+                </h3>
+
+                <p class="storefront-card-description">
+                  Fredbear's is opening its doors again.
+                </p>
+              </div>
+
+              <div class="storefront-card-footer">
+
+                <span class="price-label">
+                  FREE
+                </span>
+
+                <button
+                  class="small-primary add-library-button"
+                >
+                  Add to Library
+                </button>
+
+              </div>
+
+            </div>
+
           </article>
 
-          <article class="feature-card">
-            <span class="feature-number">02</span>
-            <h3>Collect</h3>
-            <p>
-              Add games to your personal library and keep your collection in
-              one place.
-            </p>
+          <!-- FUTURE SLOT -->
+          <article
+            class="storefront-game-card placeholder-store-card"
+          >
+
+            <div class="placeholder-card-content">
+
+              <span class="placeholder-number">
+                02
+              </span>
+
+              <div>
+                <strong>
+                  More games are coming.
+                </strong>
+
+                <p>
+                  The catalog is just getting started.
+                </p>
+              </div>
+
+            </div>
+
           </article>
 
-          <article class="feature-card">
-            <span class="feature-number">03</span>
-            <h3>Install</h3>
-            <p>
-              Use the Dismantled Nights Launcher to install, update, and
-              eventually launch your games.
-            </p>
+          <!-- FUTURE COMMUNITY SLOT -->
+          <article
+            class="storefront-game-card placeholder-store-card"
+          >
+
+            <div class="placeholder-card-content">
+
+              <span class="placeholder-number">
+                03
+              </span>
+
+              <div>
+                <strong>
+                  Community releases.
+                </strong>
+
+                <p>
+                  Approved fan projects can join later.
+                </p>
+              </div>
+
+            </div>
+
           </article>
+
         </div>
+
+        <div class="storefront-footer">
+
+          <button
+            class="text-button"
+            data-page="store"
+          >
+            Browse the full store →
+          </button>
+
+        </div>
+
       </section>
 
     </section>
 
+
     <!-- STORE -->
     <section class="page" id="storePage">
+
       <section class="page-hero">
-        <p class="section-label">STORE</p>
-        <h1>Enter the night.</h1>
+
+        <p class="section-label">
+          STORE
+        </p>
+
+        <h1>
+          Enter the night.
+        </h1>
 
         <p>
-          Explore games available through Dismantled Nights.
+          Explore games available through
+          Dismantled Nights.
         </p>
+
       </section>
 
       <section class="content-section store-section">
+
         <div class="store-toolbar">
+
           <div class="search-box">
+
             <span>⌕</span>
 
             <input
@@ -226,222 +388,411 @@
               placeholder="Search games"
               autocomplete="off"
             />
+
           </div>
 
           <div class="store-filter">
-            <button class="filter-button active">All Games</button>
+
+            <button class="filter-button active">
+              All Games
+            </button>
+
           </div>
+
         </div>
 
-        <div class="game-grid" id="gameGrid">
+        <div
+          class="game-grid"
+          id="gameGrid"
+        >
 
           <article
             class="game-card"
             data-name="those nights at fredbear's reopened"
           >
-            <div class="game-card-art">
-              <span class="game-card-badge">IN DEVELOPMENT</span>
 
-              <div class="game-card-title">
-                <small>THOSE NIGHTS AT FREDBEAR'S</small>
-                <strong>REOPENED</strong>
-              </div>
-            </div>
+            <button
+              class="game-card-art game-details-button"
+              aria-label="View Those Nights at Fredbear's: Reopened"
+            >
+
+              <span class="game-card-badge">
+                IN DEVELOPMENT
+              </span>
+
+              <span class="game-card-title">
+
+                <small>
+                  THOSE NIGHTS AT FREDBEAR'S
+                </small>
+
+                <strong>
+                  REOPENED
+                </strong>
+
+              </span>
+
+            </button>
 
             <div class="game-card-content">
+
               <div>
-                <p class="game-type">FNAF FAN GAME</p>
-                <h3>Those Nights at Fredbear's: Reopened</h3>
+
+                <p class="game-type">
+                  FNAF FAN GAME
+                </p>
+
+                <h3>
+                  Those Nights at Fredbear's:
+                  Reopened
+                </h3>
+
               </div>
 
               <div class="game-card-footer">
-                <strong>FREE</strong>
 
-                <button class="small-primary add-library-button">
+                <strong>
+                  FREE
+                </strong>
+
+                <button
+                  class="small-primary add-library-button"
+                >
                   Add to Library
                 </button>
+
               </div>
+
             </div>
+
           </article>
 
+
           <article class="game-card coming-soon-card">
+
             <div class="coming-soon-content">
+
               <span>+</span>
-              <h3>More games coming</h3>
+
+              <h3>
+                More games coming
+              </h3>
+
               <p>
-                The Dismantled Nights catalog is just beginning.
+                The Dismantled Nights catalog
+                is just beginning.
               </p>
+
             </div>
+
           </article>
 
         </div>
 
-        <p class="search-empty hidden" id="searchEmpty">
+        <p
+          class="search-empty hidden"
+          id="searchEmpty"
+        >
           No games found.
         </p>
+
       </section>
+
     </section>
+
 
     <!-- LIBRARY -->
     <section class="page" id="libraryPage">
+
       <section class="page-hero">
-        <p class="section-label">LIBRARY</p>
-        <h1>Your games.</h1>
+
+        <p class="section-label">
+          LIBRARY
+        </p>
+
+        <h1>
+          Your games.
+        </h1>
 
         <p>
-          Manage games you've added to your Dismantled Nights library.
+          Manage games you've added to your
+          Dismantled Nights library.
         </p>
+
       </section>
 
       <section class="content-section">
 
         <div class="library-info-banner">
+
           <div>
-            <strong>Games launch through the Dismantled Nights Launcher.</strong>
+
+            <strong>
+              Games launch through the
+              Dismantled Nights Launcher.
+            </strong>
 
             <p>
-              The website manages your library and installation requests.
+              The website manages your library
+              and installation requests.
             </p>
+
           </div>
 
-          <button class="primary-button" id="libraryLauncherButton">
+          <button
+            class="primary-button"
+            id="libraryLauncherButton"
+          >
             Install Launcher
           </button>
+
         </div>
 
-        <div id="libraryEmpty" class="empty-state">
-          <span class="empty-symbol">DN</span>
 
-          <h2>Your library is empty.</h2>
+        <div
+          id="libraryEmpty"
+          class="empty-state"
+        >
+
+          <span class="empty-symbol">
+            DN
+          </span>
+
+          <h2>
+            Your library is empty.
+          </h2>
 
           <p>
-            Games you add from the Store will appear here.
+            Games you add from the Store
+            will appear here.
           </p>
 
-          <button class="primary-button" data-page="store">
+          <button
+            class="primary-button"
+            data-page="store"
+          >
             Browse Store
           </button>
+
         </div>
 
-        <div id="libraryGames" class="library-list hidden">
+
+        <div
+          id="libraryGames"
+          class="library-list hidden"
+        >
 
           <article class="library-game">
+
             <div class="library-game-art">
-              <span>REOPENED</span>
+
+              <span>
+                REOPENED
+              </span>
+
             </div>
 
             <div class="library-game-info">
+
               <div>
-                <p class="game-type">FNAF FAN GAME</p>
-                <h3>Those Nights at Fredbear's: Reopened</h3>
-                <p>Added to your Dismantled Nights library.</p>
+
+                <p class="game-type">
+                  FNAF FAN GAME
+                </p>
+
+                <h3>
+                  Those Nights at Fredbear's:
+                  Reopened
+                </h3>
+
+                <p>
+                  Added to your
+                  Dismantled Nights library.
+                </p>
+
               </div>
 
               <div class="library-game-actions">
-                <button class="primary-button install-game-button">
+
+                <button
+                  class="primary-button install-game-button"
+                >
                   Install
                 </button>
 
-                <button class="secondary-button remove-library-button">
+                <button
+                  class="secondary-button remove-library-button"
+                >
                   Remove
                 </button>
+
               </div>
+
             </div>
+
           </article>
 
         </div>
 
       </section>
+
     </section>
+
 
     <!-- ABOUT -->
     <section class="page" id="aboutPage">
+
       <section class="page-hero">
-        <p class="section-label">ABOUT</p>
-        <h1>Dismantled Nights.</h1>
+
+        <p class="section-label">
+          ABOUT
+        </p>
+
+        <h1>
+          Dismantled Nights.
+        </h1>
 
         <p>
-          A dedicated platform built around FNAF fan-made experiences.
+          A dedicated platform built around
+          FNAF fan-made experiences.
         </p>
+
       </section>
 
       <section class="content-section about-layout">
 
         <article class="about-main">
-          <p class="section-label">OUR IDEA</p>
 
-          <h2>A place built specifically for fan games.</h2>
+          <p class="section-label">
+            OUR IDEA
+          </p>
+
+          <h2>
+            A place built specifically
+            for fan games.
+          </h2>
 
           <p>
-            Dismantled Nights is designed as a home for projects created by
-            Dismantled Nights and, in the future, approved games submitted by
-            other fan-game developers.
+            Dismantled Nights is designed as a
+            home for projects created by
+            Dismantled Nights and, in the future,
+            approved games submitted by other
+            fan-game developers.
           </p>
 
           <p>
-            Players can discover games, build a library, follow development,
-            and use the Dismantled Nights Launcher to manage installed titles.
+            Players can discover games, build a
+            library, follow development, and use
+            the Dismantled Nights Launcher to
+            manage installed titles.
           </p>
+
         </article>
 
         <aside class="about-side">
+
           <div class="about-stat">
             <span>01</span>
             <strong>Platform</strong>
-            <small>Dedicated fan-game catalog</small>
+            <small>
+              Dedicated fan-game catalog
+            </small>
           </div>
 
           <div class="about-stat">
             <span>02</span>
             <strong>Launcher</strong>
-            <small>Install and manage games</small>
+            <small>
+              Install and manage games
+            </small>
           </div>
 
           <div class="about-stat">
             <span>03</span>
             <strong>Community</strong>
-            <small>Future developer submissions</small>
+            <small>
+              Future developer submissions
+            </small>
           </div>
+
         </aside>
 
       </section>
 
       <section class="content-section">
+
         <div class="legal-notice">
-          <strong>Fan Project Notice</strong>
+
+          <strong>
+            Fan Project Notice
+          </strong>
 
           <p>
-            Dismantled Nights is an unofficial fan project and is not affiliated
-            with, sponsored by, or endorsed by the official Five Nights at
-            Freddy's rights holders.
+            Dismantled Nights is an unofficial
+            fan project and is not affiliated
+            with, sponsored by, or endorsed by
+            the official Five Nights at Freddy's
+            rights holders.
           </p>
+
         </div>
+
       </section>
+
     </section>
+
 
     <!-- SETTINGS -->
     <section class="page" id="settingsPage">
+
       <section class="page-hero">
-        <p class="section-label">SETTINGS</p>
-        <h1>Make it yours.</h1>
+
+        <p class="section-label">
+          SETTINGS
+        </p>
+
+        <h1>
+          Make it yours.
+        </h1>
 
         <p>
-          Customize your Dismantled Nights experience.
+          Customize your
+          Dismantled Nights experience.
         </p>
+
       </section>
 
       <section class="content-section settings-layout">
 
         <div class="settings-group">
+
           <div class="settings-heading">
-            <h2>Appearance</h2>
-            <p>Control how the website looks and behaves.</p>
+
+            <h2>
+              Appearance
+            </h2>
+
+            <p>
+              Control how the website
+              looks and behaves.
+            </p>
+
           </div>
 
+
           <div class="setting-row">
+
             <div>
-              <strong>Reduce motion</strong>
-              <p>Limit interface animations and transitions.</p>
+
+              <strong>
+                Reduce motion
+              </strong>
+
+              <p>
+                Limit interface animations
+                and transitions.
+              </p>
+
             </div>
 
             <button
@@ -452,12 +803,23 @@
             >
               <span></span>
             </button>
+
           </div>
 
+
           <div class="setting-row">
+
             <div>
-              <strong>Background effects</strong>
-              <p>Show static and atmospheric interface effects.</p>
+
+              <strong>
+                Background effects
+              </strong>
+
+              <p>
+                Show static and atmospheric
+                interface effects.
+              </p>
+
             </div>
 
             <button
@@ -468,113 +830,210 @@
             >
               <span></span>
             </button>
+
           </div>
+
         </div>
 
+
         <div class="settings-group">
+
           <div class="settings-heading">
-            <h2>Account</h2>
-            <p>Account features will connect when authentication is built.</p>
+
+            <h2>
+              Account
+            </h2>
+
+            <p>
+              Account features will connect when
+              authentication is built.
+            </p>
+
           </div>
 
           <div class="setting-row">
+
             <div>
-              <strong>Dismantled Nights Account</strong>
-              <p>Not currently signed in.</p>
+
+              <strong>
+                Dismantled Nights Account
+              </strong>
+
+              <p>
+                Not currently signed in.
+              </p>
+
             </div>
 
-            <button class="secondary-button" id="settingsSignInButton">
+            <button
+              class="secondary-button"
+              id="settingsSignInButton"
+            >
               Sign In
             </button>
+
           </div>
+
         </div>
 
       </section>
+
     </section>
 
   </main>
 
+
   <!-- ACCOUNT MODAL -->
-  <div class="modal-backdrop hidden" id="accountModal">
+  <div
+    class="modal-backdrop hidden"
+    id="accountModal"
+  >
+
     <div class="modal account-modal">
 
-      <button class="modal-close" data-close-modal="accountModal">
+      <button
+        class="modal-close"
+        data-close-modal="accountModal"
+      >
         ×
       </button>
 
       <div class="modal-brand">
-        <span class="brand-symbol large">DN</span>
 
-        <p class="section-label">DISMANTLED NIGHTS ACCOUNT</p>
+        <span class="brand-symbol large">
+          DN
+        </span>
 
-        <h2 id="accountModalTitle">Welcome back.</h2>
+        <p class="section-label">
+          DISMANTLED NIGHTS ACCOUNT
+        </p>
+
+        <h2 id="accountModalTitle">
+          Welcome back.
+        </h2>
 
         <p id="accountModalText">
-          Sign in to access your library across Dismantled Nights.
+          Sign in to access your library
+          across Dismantled Nights.
         </p>
+
       </div>
 
+
       <div class="auth-tabs">
-        <button class="auth-tab active" data-auth-mode="login">
+
+        <button
+          class="auth-tab active"
+          data-auth-mode="login"
+        >
           Log In
         </button>
 
-        <button class="auth-tab" data-auth-mode="signup">
+        <button
+          class="auth-tab"
+          data-auth-mode="signup"
+        >
           Sign Up
         </button>
+
       </div>
 
+
       <div class="provider-list">
-        <button class="provider-button apex-provider" id="apexAuthButton">
-          <span class="provider-logo">A</span>
+
+        <button
+          class="provider-button apex-provider"
+          id="apexAuthButton"
+        >
+
+          <span class="provider-logo">
+            A
+          </span>
 
           <span id="apexAuthText">
             Log in with Apex Games
           </span>
+
         </button>
 
-        <button class="provider-button google-provider" id="googleAuthButton">
-          <span class="google-g">G</span>
+
+        <button
+          class="provider-button google-provider"
+          id="googleAuthButton"
+        >
+
+          <span class="google-g">
+            G
+          </span>
 
           <span id="googleAuthText">
             Log in with Google
           </span>
+
         </button>
+
       </div>
+
 
       <div class="modal-note">
-        <strong>Prototype</strong>
+
+        <strong>
+          Prototype
+        </strong>
 
         <p>
-          Authentication isn't connected yet. Apex Games login will eventually
-          verify your Apex Games identity without copying your password.
+          Authentication isn't connected yet.
+          Apex Games login will eventually verify
+          your Apex Games identity without copying
+          your password.
         </p>
+
       </div>
+
     </div>
+
   </div>
 
+
   <!-- LAUNCHER MODAL -->
-  <div class="modal-backdrop hidden" id="launcherModal">
+  <div
+    class="modal-backdrop hidden"
+    id="launcherModal"
+  >
+
     <div class="modal">
 
-      <button class="modal-close" data-close-modal="launcherModal">
+      <button
+        class="modal-close"
+        data-close-modal="launcherModal"
+      >
         ×
       </button>
 
       <div class="modal-brand">
-        <span class="brand-symbol large">DN</span>
 
-        <p class="section-label">DISMANTLED NIGHTS LAUNCHER</p>
+        <span class="brand-symbol large">
+          DN
+        </span>
 
-        <h2>The launcher is coming later.</h2>
+        <p class="section-label">
+          DISMANTLED NIGHTS LAUNCHER
+        </p>
+
+        <h2>
+          The launcher is coming later.
+        </h2>
 
         <p>
-          The Dismantled Nights Launcher will install, update, manage, and
-          launch your games.
+          The Dismantled Nights Launcher
+          will install, update, manage,
+          and launch your games.
         </p>
+
       </div>
 
       <div class="launcher-feature-list">
+
         <div>
           <span>01</span>
           <p>Install games</p>
@@ -589,55 +1048,88 @@
           <span>03</span>
           <p>Launch your library</p>
         </div>
+
       </div>
 
-      <button class="primary-button full-button" data-close-modal="launcherModal">
+      <button
+        class="primary-button full-button"
+        data-close-modal="launcherModal"
+      >
         Got it
       </button>
+
     </div>
+
   </div>
 
+
   <!-- GAME DETAILS MODAL -->
-  <div class="modal-backdrop hidden" id="gameModal">
+  <div
+    class="modal-backdrop hidden"
+    id="gameModal"
+  >
+
     <div class="modal game-modal">
 
-      <button class="modal-close" data-close-modal="gameModal">
+      <button
+        class="modal-close"
+        data-close-modal="gameModal"
+      >
         ×
       </button>
 
-      <p class="section-label">IN DEVELOPMENT</p>
+      <p class="section-label">
+        IN DEVELOPMENT
+      </p>
 
-      <h2>Those Nights at Fredbear's: Reopened</h2>
+      <h2>
+        Those Nights at Fredbear's:
+        Reopened
+      </h2>
 
       <p>
-        Fredbear's closed its doors. Now, they're opening again.
+        Fredbear's closed its doors.
+        Now, they're opening again.
       </p>
 
       <div class="detail-grid">
+
         <div>
           <span>Developer</span>
-          <strong>Dismantled Nights</strong>
+          <strong>
+            Dismantled Nights
+          </strong>
         </div>
 
         <div>
           <span>Availability</span>
-          <strong>Coming Later</strong>
+          <strong>
+            Coming Later
+          </strong>
         </div>
 
         <div>
           <span>Price</span>
-          <strong>Free</strong>
+          <strong>
+            Free
+          </strong>
         </div>
+
       </div>
 
-      <button class="primary-button full-button add-library-button">
+      <button
+        class="primary-button full-button add-library-button"
+      >
         Add to Library
       </button>
+
     </div>
+
   </div>
 
   <div class="toast" id="toast"></div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
